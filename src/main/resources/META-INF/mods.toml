@@ -1,0 +1,30 @@
+modLoader="javafml"
+loaderVersion="[46,)"
+license="GNU General Purpose License v3 (GPLv3)"
+
+[[mods]]
+modId="ntgbb"
+version="1.20-1.0.0"
+displayName="Netherite Template Go Bye Bye"
+logoFile="ntgbb.png"
+credits="Lemon_Juiced"
+authors="Lemon_Juiced"
+
+description='''
+Adds A Fairer Recipe For Netherite Armor and Tools.
+
+The original goal of the mod was to revert the new recipes to the old recipes, but Mojang seems to have made it impossible without the old smithing table.
+'''
+
+[[dependencies.ntgbb]]
+    modId="forge"
+    mandatory=true
+    versionRange="[46,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.ntgbb]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20,1.21)"
+    ordering="NONE"
+    side="BOTH"
