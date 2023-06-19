@@ -4,7 +4,7 @@ license="GNU General Purpose License v3 (GPLv3)"
 
 [[mods]]
 modId="ntgbb"
-version="1.20.1-1.0.1"
+version="1.20.1-1.1.0"
 displayName="Netherite Template Go Bye Bye"
 logoFile="ntgbb.png"
 credits="Lemon_Juiced"
