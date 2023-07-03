@@ -4,11 +4,10 @@ license="GNU General Purpose License v3 (GPLv3)"
 
 [[mods]]
 modId="ntgbb"
-version="1.20.1-1.1.0"
+version="1.20.1-1.1.1"
 displayName="Netherite Template Go Bye Bye"
 logoFile="ntgbb.png"
-credits="Lemon_Juiced"
-authors="Lemon_Juiced"
+authors="Lemon_Juiced & Scalar Team"
 
 description='''
 Adds A Fairer Recipe For Netherite Armor and Tools.
