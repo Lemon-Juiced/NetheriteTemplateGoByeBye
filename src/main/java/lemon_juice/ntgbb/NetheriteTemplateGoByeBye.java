@@ -1,5 +1,9 @@
 package lemon_juice.ntgbb;
 
+import lemon_juice.ntgbb.block.ModBlocks;
+import lemon_juice.ntgbb.creativetab.ModCreativeTab;
+import lemon_juice.ntgbb.item.ModItems;
+import lemon_juice.ntgbb.world.inventory.ModMenuTypes;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.server.ServerStartingEvent;
@@ -16,7 +20,19 @@ public class NetheriteTemplateGoByeBye {
 
     public NetheriteTemplateGoByeBye() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        // Register Items
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
+
+        // Register Creative Tab
+        ModCreativeTab.register(modEventBus);
+        modEventBus.addListener(ModCreativeTab::registerTabs);
+
+        ModMenuTypes.register(modEventBus);
+
         modEventBus.addListener(this::commonSetup);
+
         MinecraftForge.EVENT_BUS.register(this);
     }
 
